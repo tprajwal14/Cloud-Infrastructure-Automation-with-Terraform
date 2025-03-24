@@ -17,9 +17,9 @@ resource "aws_db_instance" "main_db" {
   engine_version         = "8.0"
   instance_class         = "db.t3.micro"
 
-  db_name                = "mydatabase" # Optional, but useful if you want a DB pre-created
+  db_name                = "mydatabase"
   username               = "admin"
-  password               = "Password123!" # Strong password! (Don't use hardcoded passwords in production)
+  password               = "Password123!"
 
   skip_final_snapshot    = true
 

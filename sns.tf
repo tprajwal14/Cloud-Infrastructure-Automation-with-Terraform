@@ -7,10 +7,10 @@ resource "aws_sns_topic" "my_topic" {
 resource "aws_sns_topic_subscription" "email_subscription" {
   topic_arn = aws_sns_topic.my_topic.arn
   protocol  = "email"
-  endpoint  = "takeprajwal4@gmail.com" # Replace with your email address
+  endpoint  = "takeprajwal4@gmail.com" 
 }
 
-# Optional: Output the SNS topic ARN
+
 output "sns_topic_arn" {
   value = aws_sns_topic.my_topic.arn
 }
